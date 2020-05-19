@@ -86,6 +86,17 @@ public class RestSource extends AbstractSource implements PollableSource, Config
         return stateSetting.removeDuplicate(JSONArray.parseArray(HttpUtils.sendGet(url, paramMap)));
     }
 
+    /**
+     *@Description 返回最新一条数据
+     *@Author fmy
+     *@Date 2020/5/19 22:43
+     *@Param [url]
+     *@Return com.alibaba.fastjson.JSONArray
+     **/
+    private JSONArray queryLastData(String url) {
+        return new JSONArray();
+    }
+
     @Override
     public long getBackOffSleepIncrement() {
         return 0;
