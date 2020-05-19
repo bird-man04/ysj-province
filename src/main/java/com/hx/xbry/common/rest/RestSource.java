@@ -47,6 +47,7 @@ public class RestSource extends AbstractSource implements PollableSource, Config
     @Override
     public Status process() {
         Status status = Status.READY;
+        //TODO  2020/5/19 17:49 fmy
         try {
             Thread.sleep(intervalMillis);
         } catch (InterruptedException e) {
