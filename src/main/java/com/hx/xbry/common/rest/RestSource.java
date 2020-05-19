@@ -48,6 +48,7 @@ public class RestSource extends AbstractSource implements PollableSource, Config
     public Status process() {
         Status status = Status.READY;
         //TODO  2020/5/19 17:49 fmy
+        //TODO  2020/5/19 18:19 fmy 优化访问接口的方式 防止
         try {
             Thread.sleep(intervalMillis);
         } catch (InterruptedException e) {
